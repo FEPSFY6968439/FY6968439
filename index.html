@@ -66,18 +66,28 @@
     <h2> Abstract</h2>
     <p>This article explores the two most fundamental forces in the world of motorsport which are Downforce and Drag whilst also outlining why balancing these two forces is the most important thing in the world of racing. It explains how downforce is created due to the car’s wings and underside, making the tires have more grip while drag acts in the opposite direction to the motion of travel reducing acceleration and top speed. Furthermore, the article examines how both forces increase with speed and what the top and lead engineers can use to find a suitable balance. By considering the layouts of each individual track they can determine the best possible set up enhancing the speed of the car leading to the fastest lap times.</p>
     <h2> Main Article</h2>
-    <h3>Introduction</h3>
+    <div id="Introduction_InText">
+    <h3 id="introduction">Introduction</h3>
     <p>When races are decided by fractions of a second, every small gain matters. One of the biggest comes from the air itself. As a car speeds along, the air pushes on it in two key ways: one presses it onto the track, while the other slows it down. The two key forces are called drag and downforce. Downforce is a force which due to the wings and the shape of the car’s underside acts downwards meaning the car is firmly pressed onto the road acting as a glue to make the car stick to the road (Kajiwara and Ton, 2026). In contrast, drag is a force which acts in the opposite direction to the car's motion and increases sharply when the speed of the car increases (Kajiwara and Ton, 2026). This is why balance is key as the two forces work against each other meaning the features which add downforce also add drag meaning finding the right balance is the toughest challenges in race car design.</p>
-    <h3> How downforce is generated</h3>
+    </div>
+    <div id="Downforce_InText">
+    <h3 id="downforce">How downforce is generated</h3>
     <p>Downforce is generated primarily through the shape of the car’s underside (Kajiwara and Ton, 2026) and the use of inverted wings (Katz, 1995). These wings use aerofoil-shaped surfaces to alter the air flow and create a pressure distribution that creates an overall downwards force on the vehicle (Katz, 1995). This can be partly explained by Bernoulli’s principle, shown as p+1/2ρV^2 = constant, where (p) is the static pressure, ρ is air density and (v) is the airflow velocity (Anderson and Cadou, 2023).Under the correct circumstances there is almost a see-saw effect between the air speed and air pressure. When the speed increases, the pressure decreases leading to the air rushing rapidly underneath the wing causing the pressure to drop. This then makes the slow but high-pressure air to push down onto the car which creates the downforce needed to keep the car grounded,(Anderson and Cadou, 2023)</p>
-
+    
     <p>Furthermore, the relationship between vehicle speed and downforce can be shown using the equation 𝐹𝐿=1/2𝐶L𝜌𝑆v^2, (Kajiwara and Ton, 2026), as well as the table 1.1. This equation shows that downforce increases proportionally to the square of the vehicle's speed, so at very high speeds this is why the downforce generated is large. This is further reflected in the table whereas the top speed increases the downforce at the top speed also increases considerably.</p>
-    <h3> The price: drag</h3>
+    </div>
+    <div id="Drag_InText">
+    <h3 id="drag">The price: drag</h3>
     <p>Drag is a force which acts in the opposite direction to which the car travels and therefore will use up more of the engine power hindering the acceleration and top speed of the vehicle, (Seward, 2014). In the world of motorsport, everyone tries to go as fast as possible but with speed comes the problem of drag. Drag is characterised by the equation: Total Drag Force = C_d X 1/2ρv^2A, where (v) is the speed of vehicle relative to air, (A) is the frontal Area of vehicle and (ρ) is density of fluid/air vehicle travels through, (Seward, 2014). So, as the speed of the car increases, the drag rises proportionally to the square of its velocity, for simplicity this is assuming everything else is constant and doesn’t matter, (Katz, 1995). This slows the car down and affects the total speed as more engine power is required to overcome this force, (Seward, 2014). Engineers must therefore find the best of both worlds between drag and downforce so that high speeds are not affected, (Katz, 2006). This trade-off is the primary challenge in race-car design.</p>
-    <h3>Balancing the two: Downforce and Drag</h3>
+    </div>
+    <div id="Balancing_InText">
+    <h3 id="balancing">Balancing the two: Downforce and Drag</h3>
     <p>Finding the balance between both Downforce and Drag is an essential when trying to maximise race pace and ultimately trying to win. By balancing the car, you are essentially making it more stable, requiring less driver effort in fighting the car and making it easier to predict its movements and steer (Katz, 1995). There are several ways this can be achieved; however, each way comes with other trade-offs meaning balancing the two perfectly in reality is hard. This can be achieved by adjusting the angle of the car’s wings (Katz, 1995). Increasing the angle generates more of a downward force (downforce) which helps the tyres have more grip through the corners but in turn drag gets increased hindering the top speed (Katz, 1995). Reducing the angle has the opposite effect, leading to the car going faster on the straights but reducing the speed and grip on the corners, (Katz, 1995). Therefore, the ideal set up changes track by track as some tracks have more straights while others have more corners. Engineers can test different set ups using specialist equipment such as simulations and wind tunnels before examining the performance on the track, (Katz, 2006). This ensures that the best set up is achieved enhancing the speed of the car.</p>
-    <h3>Conclusion:</h3>
+    </div>
+    <div id="Conclusion_InText">
+    <h3 id="conclusion">Conclusion</h3>
     <p>In conclusion, drag and downforce are both important factors in racing-car design because they determine how quickly a car goes and performs on a track. Downforce helps the tyres maintain grip, whilst drag is responsible for reducing acceleration and top speed. Therefore, engineers must find a suitable balance between the two forces by adjusting features such as wing angles and using different set ups. To find the perfect balance is very dependent on the track you are on as some tracks are more straight line orientated whilst others are more corner orientated. Ultimately successful aerodynamic design is about finding the best compromise to achieve the fastest overall lap time and win.</p>
+    </div>
     <script>
       // Function to calculate and display word count for a specified section
       function displayWordCount(sectionId, outputId) {
@@ -91,15 +101,18 @@
         return wordCount;
       }
       // Function to calculate and display total word count from selected sections
-      function displayTotalWordCount() {
-        // Calculate word count for each section and accumulate the total
-        const IntroductionCount = displayWordCount("Introduction_InText");
-        const AnalysisCount = displayWordCount("Analysis_InText");
-        // Calculate the sum of all selected sections
-        const totalWordCount = IntroductionCount + AnalysisCount;
-        // Display the total word count
-        document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
-      }
+     function displayTotalWordCount() {
+  // Calculate word count for each section and accumulate the total
+  const IntroductionCount = displayWordCount("Introduction_InText");
+  const DownforceCount = displayWordCount("Downforce_InText");
+  const DragCount = displayWordCount("Drag_InText");
+  const BalancingCount = displayWordCount("Balancing_InText");
+  const ConclusionCount = displayWordCount("Conclusion_InText");
+  // Calculate the sum of all selected sections
+  const totalWordCount = IntroductionCount + DownforceCount + DragCount + BalancingCount + ConclusionCount;
+  // Display the total word count
+  document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+}
       // Run the function for specific sections and display total count when the page loads
       window.onload = displayTotalWordCount;
     </script>
