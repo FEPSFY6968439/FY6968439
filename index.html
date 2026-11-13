@@ -32,6 +32,27 @@
     color: #222222;
   }
 </style>
+<style>
+    table.data {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+table.data th, table.data td {
+  border: 1px solid #999999;
+  padding: 8px 12px;
+  text-align: left;
+}
+table.data th {
+  background-color: #dddddd;
+}
+table.data tr:nth-child(even) td {
+  background-color: #f4f4f4;
+}
+table.data tr:hover td {
+  background-color: #e6eef5;
+}
+</style>
 </head>
 <body>
     <!-- //////////////////////////////////////////////////////////////////////////////// -->
@@ -128,7 +149,7 @@
     <p>Downforce is generated primarily through the shape of the car’s underside (Kajiwara and Ton, 2026) and the use of inverted wings (Katz, 1995). These wings use aerofoil-shaped surfaces to alter the air flow and create a pressure distribution that creates an overall downwards force on the vehicle (Katz, 1995). This can be partly explained by Bernoulli’s principle, shown as p+1/2ρV^2 = constant, where (p) is the static pressure, ρ is air density and (v) is the airflow velocity (Anderson and Cadou, 2023).Under the correct circumstances there is almost a see-saw effect between the air speed and air pressure. When the speed increases, the pressure decreases leading to the air rushing rapidly underneath the wing causing the pressure to drop. This then makes the slow but high-pressure air to push down onto the car which creates the downforce needed to keep the car grounded,(Anderson and Cadou, 2023)</p>
     <p><b>Table 1.1:</b> Showing how downforce is related to speed</p>
 <div style="overflow-x:auto;">
-<table>
+<table class="data">
   <tr>
     <th>Performance level</th>
     <th>Engine power (bhp)</th>
